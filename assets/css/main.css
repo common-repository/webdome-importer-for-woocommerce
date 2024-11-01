@@ -1,0 +1,360 @@
+/*
+**** Variablen
+*/
+/* :root {
+	--accent-2: calc(var(--accent-r) * 0.8), calc(var(--accent-g) * 0.8), calc(var(--accent-b) * 0.8);
+
+	--accent-r: calc((parseInt(var(--accent), 16) >> 16) & 255);
+	--accent-g: calc((parseInt(var(--accent), 16) >> 8) & 255);
+	--accent-b: calc(parseInt(var(--accent), 16) & 255);
+} */
+
+/* 
+**** Kategoriebeschreibung unterhalb Produkten
+*/
+.custom-produktkasten {
+	margin: 30px 0 30px 0; 
+	padding: 5px; 
+	-webkit-column-count: 2; 
+	-moz-column-count: 2; 
+	column-count: 2; 
+	-webkit-column-gap: 40px; 
+	-moz-column-gap: 40px; 
+	column-gap: 40px; 
+	-webkit-column-rule: 1px solid var(--base); 
+	-moz-column-rule: 1px solid var(--base); 
+	column-rule: 1px solid var(--base);
+}
+
+@media only screen and (max-width: 768px) {
+	.custom-produktkasten {
+		-webkit-column-count: 1; 
+		-moz-column-count: 1; 
+		column-count: 1; 
+	}
+}
+
+.custom_produktdetails_title {
+	margin-top: 0 !important;
+}
+
+/*
+**** Kategoriebeschreibung innterhalb Produkte
+*/
+
+.custom-produktdetails_inlay a {
+	display: inline-block;
+	color:var(--contrast-3);
+	background-color:#fff;
+	padding:2px 8px 2px 8px;
+	margin: 5px 5px !important;
+	border-radius:2px;
+	line-height: 1.6;
+	font-size:14px;
+}
+
+/* Einschubkasten Buttons hover */
+.custom_produktdetails_button:hover {
+	color:#ffffff!important;
+	background-color:var(--accent-2)!important;
+}
+
+/* Einschubkasten Tags */
+.custom-produktdetails_tags {
+	text-align: center;
+	padding: 30px 20px;
+}
+
+.custom-produktdetails_inlay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+}
+
+.custom-produktdetails_inlay span {
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* Einschubkasten HG Farbe */
+.custom_produktdetails {
+	background-color:var(--global-color-10);
+}
+
+/* Einschubkasten Grid */
+.custom_produktdetails {
+	display: grid; 
+	width: 100%; 
+	margin:25px 0px 25px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+	.custom_produktdetails {
+		grid-template-columns: repeat(2, minmax(0,1fr)); 
+	}
+}
+
+/* Einschubkasten Text */
+p.custom_produktdetails_p {
+	line-height:1.5; 
+	margin:0px;
+	font-size:14px!important; 
+}
+
+/* Einschubkasten Title */
+.custom_produktdetails_title {
+   font-family: Kalam, handwriting;
+	font-weight:500!important;
+	color: var(--accent);
+	font-size:25px;
+	margin-bottom:10px!important;
+}
+
+/*
+**** Einzelheiten Kategorieseiten
+*/
+.wdwi_products_cat_meta {
+	margin-top: 15px;
+}
+
+
+
+
+/* SONSTIGES */
+
+.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header {
+    padding: 30px !important;
+}
+
+.article{
+	background-color:red !important;
+}
+
+
+.wdwi-nav-container{
+	padding-bottom:20px
+}
+.wdwi-nav-container-mobile{
+	height:100px !important;
+	position:fixed;
+	top:10px;
+	right:10px;
+	z-index:5;
+	background-color:#ffffff;
+	
+}
+.navs{
+	padding:0px 2px;
+}
+
+.nav-level {
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-level a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-level > li:hover > a{
+	
+	font-weight:400 !important;
+	transition:0.4s ease !important;
+	color:var(--accent)!important;
+	font-weight:700 !important;
+	letter-spacing:0.02em !important;
+}
+
+
+.nav-level-1{	
+	display:flex;
+	margin:0px !important;
+    border-bottom: 1px solid #eaeaf3;
+	align-items: center;
+    padding: 0 20px 0px 20px;	
+	min-height:35px;
+}
+.nav-level-1:hover { 
+    background-color: #ececec;
+}
+.nav-level-1 a {
+    display: flex;
+    font-size: 14px;
+}
+.nav-level-1 img{
+    margin-left: auto;
+}
+.nav-level-1:hover a {
+    color:var(--accent)!important; /* Change the color when hovering */
+    font-weight: 700; /* Change the font weight when hovering */
+	transition:0.4s ease
+}
+
+
+.nav-level-2 {
+    font-size: 16px;
+    background-color: #ffffff;
+	margin:0px !important;
+}
+.nav-level-2 li{
+	display:flex;
+	position:static !important;
+    border-bottom: 1px solid #eaeaf3;
+	align-items: center;	
+	padding: 0 30px 1px 10px;
+	background-position: 0% 0%
+}
+.nav-level-2 li a{
+	font-size:13px;
+	padding: 4px 10px 3px 25px;
+}
+
+.nav-level-2{
+    list-style: none;
+}
+.nav-level-2 li{
+    padding: 0 20px 1px 10px;
+	min-height:35px;
+	margin:0px !important;
+}
+.nav-level-2 li a{
+	font-weight:400
+}
+.nav-level-2 li:hover{
+	font-weight:bold;
+    background-color: #ececec; 
+}
+.nav-level-2 li:hover a{
+	transition:0.4s ease !important;
+	color:var(--accent)!important;
+	font-weight:700 !important;
+	letter-spacing:0.02em ;
+}
+.nav-level-2 li:hover a.active{
+	letter-spacing:0em !important;
+}
+
+/*  */
+.nav-level-3 {
+    font-size: 16px;
+    background-color: #ffffff;
+	margin:0px !important;
+}
+.nav-level-3 li{
+	display:flex;
+	position:static !important;
+    border-bottom: 1px solid #eaeaf3;
+	align-items: center;	
+	padding: 0 30px 1px 10px;
+	background-position: 0% 0%
+}
+.nav-level-3 li a{
+	font-size:12px;
+	padding: 4px 10px 3px 35px;
+}
+
+.nav-level-3{
+    list-style: none;
+}
+.nav-level-3 li{
+    padding: 0 20px 1px 10px;
+	min-height:35px;
+	margin:0px !important;
+}
+.nav-level-3 li a{
+	font-weight:400
+}
+.nav-level-3 li:hover{
+	font-weight:bold;
+    background-color: #ececec; 
+}
+.nav-level-3 li:hover a{
+	transition:0.4s ease !important;
+	color:var(--accent)!important;
+	font-weight:700 !important;
+	letter-spacing:0.02em ;
+}
+.nav-level-3 li:hover a.active{
+	letter-spacing:0em !important;
+}
+
+
+.rotate-element > img {
+    transition: transform 0.3s ease;
+}
+.rotated {
+    transform: rotate(180deg);
+}
+.active{
+	background-color:#ececec;
+}
+.active a{	
+	color:var(--accent)!important;
+	font-weight:700;
+}
+.active a:hover{
+	letter-spacing:0em !important
+}
+.category_nav_title {
+    padding: 12px 0px 12px 20px;
+    background-color: var(--accent);
+    color: #ffffff;
+	margin:0;
+}
+
+/* Markplatz Pagination */
+
+/* Center the pagination & set variables */
+.pagination {
+	--pagination-light-gray: var(--global-color-10);
+	--pagination-gray: var(--base);
+	--pagination-dark-gray: var(--contrast-2);
+	--pagination-border: 1px solid var(--pagination-gray);
+	display: flex;
+	justify-content: center;
+}
+
+/* Pagination div, set border etc */
+ul.page-numbers {
+	list-style: none;
+	display: inline-flex;
+	border: var(--pagination-border);
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+ul.page-numbers li {
+	border-right: var(--pagination-border);
+	flex-grow: 1; /* Make every page link takes full width on mobile */
+}
+
+ul.page-numbers li a,
+ul.page-numbers li span {
+	display: inline-block;
+	width: 100%;
+	padding: 12px 18px;
+    text-align: center;
+	transition: all 0.2s ease-in;
+}
+
+ul.page-numbers li a:hover,
+ul.page-numbers li span.current {
+	background: var(--pagination-light-gray);
+	color: var(--pagination-dark-gray);
+}
+
+/* Smaller screen size styles */
+@media screen and (max-width: 500px) {
+	ul.page-numbers li a,
+	ul.page-numbers li span {
+		padding: 8px 14px;
+	}
+	
+	/* Add bottom border to make links look better when they wrap on to second line */
+	ul.page-numbers li:not(:last-child) {
+		border-bottom: var(--pagination-border);
+	}
+}
